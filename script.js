@@ -20,8 +20,6 @@ footerLinks.classList.add('invert');
 nav.classList.add('dark-nav')
 }
 
-
-
 function toggleLight(){
   lightIcon.classList.add('light-icon');
   darkIcon.style.display = 'block';

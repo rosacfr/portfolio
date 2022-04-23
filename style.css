@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
 }
 
 html {
@@ -18,36 +19,53 @@ body {
 
 main {
   flex: 1;
-  border: 4px red solid;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-me {
   width: 65%;
   margin: 0 auto;
 }
 
 h1 {
   color: rgb(114, 198, 114);
+  font-family: 'Montserrat Alternates', sans-serif;
   font-size: 100px;
+  font-weight: 600;
   margin: 6px 0;
   line-height: 0.9em;
+  text-shadow: 3px 3px 3px rgb(95, 183, 95);
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.tech {
+  font-weight: 200;
 }
 
 .name {
-  font-size: 26px;
-  margin: 17px 0 0;
+  font-size: 33px;
+  margin: 28px 0 0;
+  font-weight: 500;
 }
 
 .info {
- margin-top: 6px;
- font-size: 20px;
- line-height: 1.3em;
+  margin-top: 6px;
+  font-size: 19px;
+  line-height: 1.3em;
 }
 
 .skills {
   margin-top: -10px;
+  margin-bottom: 80px;
   font-size: 18px;
   line-height: 1em;
 }
 
-.display-mode:hover {
+.display-mode:hover, button:hover {
   cursor: pointer;
 }
 
@@ -75,6 +93,27 @@ nav {
   margin: 5px;
 }
 
+.project-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.project-container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px;
+  margin: 20px 0 150px; 
+}
+
+
+.project-container p {
+  font-size: 19px;
+}
+
+.project-container img {
+  width: 750px;
+  box-shadow: 0 0 10px 5px rgb(114, 114, 114);
+}
 
 nav a, footer a {
   padding: 12px 8px;
@@ -84,13 +123,28 @@ a {
   text-decoration: none;
 }
 
+a:hover, .display-mode img:hover {
+  opacity: 0.6;
+}
+
 a:visited {
   text-decoration: none;
 }
 
-nav button {
-  padding: 8px 0;
-  font-size: 14px;
+button {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 6px;
+  padding: 5px;
+  width: 100px;
+  background-color: rgb(114, 198, 114);
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(92, 92, 92);
+  color: white;
 }
 
 .footer-links {
